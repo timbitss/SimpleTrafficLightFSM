@@ -1,9 +1,7 @@
 // ***** 0. Documentation Section *****
-// TableTrafficLight.c for Lab 10
-// Runs on LM4F120/TM4C123
-// Index implementation of a Moore finite state machine to operate a traffic light.  
-// Daniel Valvano, Jonathan Valvano
-// January 15, 2016
+// TableTrafficLight.c 
+// Author: Timothy Nguyen
+// Credits: Dr. Jonathan Valvano and Dr. Ramesh Yerraballi
 
 // east/west red light connected to PB5
 // east/west yellow light connected to PB4
@@ -71,7 +69,7 @@ int main(void){
 		unsigned long presentState = ALLOFF2;
 		unsigned long input;
 		
-  TExaS_Init(SW_PIN_PE210, LED_PIN_PB543210,ScopeOff); // activate grader and set system clock to 80 MHz
+  TExaS_Init(SW_PIN_PE210, LED_PIN_PB543210,ScopeOff); 
 	initPortF();
 	initPortE();
 	initPortB();
